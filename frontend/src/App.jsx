@@ -1,9 +1,21 @@
+
 import React from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Sidebar from "./components/Sidebar/Sidebar";
 
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { CreateForm } from './components/CreateForm'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+
 const App = () => {
   return (
+
     <div className="bg-gray-200 h-screen flex">
       <Sidebar />
       <div className="flex flex-col flex-1">
@@ -18,5 +30,13 @@ const App = () => {
     </div>
   );
 };
+
+    <>
+      <CreateForm/>
+    
+    </>
+  )
+}
+
 
 export default App;
