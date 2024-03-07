@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div className="bg-gray-100 h-screen flex">
+    <div className="bg-gray-200 h-screen flex">
       <Sidebar />
       <div className="flex flex-col flex-1">
         <NavBar />
